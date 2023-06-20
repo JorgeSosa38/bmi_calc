@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form>
+        <h3>BMI Button</h3>
+        <p>
+            <label>Enter Weight(kg)</label><br>
+            <input type="number" name="weight" max="150" min="30">
+        </p>
+        <p>
+            <label>Enter Height(m)</label><br>
+            <input type="number" name="height" max="2.20" min="1.00" step=".01">
+        </p>
+        <button type="button" id="calculate">Calculate BMI</button>
+        <button type="reset" id="reset">Reset</button>
+        <div id="summary"></div>
+    </form>
+</body>
+</html>
